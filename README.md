@@ -8,6 +8,8 @@ You'll need to create a new node server. Open a new terminal within the project 
 
 1. Initialize a new project: `npm i`
 2. run the development server with `npm run dev`
+3. go to the below url in any browser to test local changes
+`http://localhost:8082/filteredimage?image_url=https://timedotcom.files.wordpress.com/2019/03/kitten-report.jpg`
 
 ### Create a new endpoint in the server.ts file
 
@@ -22,6 +24,8 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
 ### Deploying your system
 
 Follow the process described in the course to `eb init` a new application and `eb create` a new enviornment to deploy your image-filter service! Don't forget you can use `eb deploy` to push changes.
+checkout the below url for testing
+`http://udacity-udagram-dev.us-east-2.elasticbeanstalk.com/filteredimage?image_url=https://timedotcom.files.wordpress.com/2019/03/kitten-report.jpg`
 
 ## Stand Out (Optional)
 
